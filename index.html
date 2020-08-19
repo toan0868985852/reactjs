@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="root"></div>
+    <!-- <div class="title">React tutorrials</div>
+    <img src="https://cdn.tgdd.vn/Files/2020/06/08/1261696/moi-tai-bo-hinh-nen-asus-rog-2020-moi-nhat-5_800x450.jpg" width="600px" height="380px" alt="img"> -->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+
+    <script>
+        const Title = React.createElement('div', {
+            className: 'title'
+        }, 'React tutorrials');
+
+        const Image = React.createElement('img', {
+            src: 'https://cdn.tgdd.vn/Files/2020/06/08/1261696/moi-tai-bo-hinh-nen-asus-rog-2020-moi-nhat-5_800x450.jpg',
+            width: '600px',
+            height: '380px'
+        }, );
+
+        const App = React.createElement('div', null, Title, Image);
+        const root = document.getElementById('root')
+        ReactDOM.render(App, root)
+    </script>
+</body>
+
+</html>
